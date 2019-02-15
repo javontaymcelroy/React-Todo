@@ -1,5 +1,7 @@
 html {
-    background-color: #f5f5f5;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/9042ed76257539.5c643e712ba24.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .App {
@@ -16,9 +18,11 @@ html {
 .App h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
     letter-spacing: 5px;
     font-size: 1.3rem;
-    color: rgb(87, 87, 87);
+    color: #5574ee;
     width: 100%;
     padding-bottom: 20px;
     border-bottom: 3px solid rgba(216, 216, 216, 0.733);
@@ -36,10 +40,11 @@ form {
 input {
     width: 70%;
     height: 45px;
+    background-color: inherit;
     border: 0px;
     margin-bottom: 10px;
     font-size: 1.2rem;
-    padding-left: 10px;
+    padding-left: 8px;
     border-radius: 10px;
     outline-style:none;
     box-shadow:none;
@@ -47,15 +52,16 @@ input {
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 ::placeholder {
     font-size: 1.2rem;
-    color: rgb(211, 211, 211);
+    font-weight: 500;
+    color: rgb(95, 95, 95);
 }
 
 
@@ -68,6 +74,9 @@ input:-webkit-autofill:active  {
     transform: rotate(45deg);
     cursor: pointer;
     transition: .3s ease-in-out;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
 }
 
 .form-btn:hover {
@@ -96,6 +105,9 @@ input:-webkit-autofill:active  {
     border-radius: 8px;
     transition: .3s ease-in-out;
     cursor: pointer;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
 }
 
 .clear-btn:hover {
@@ -113,6 +125,18 @@ input:-webkit-autofill:active  {
     padding: 30px 20px;
     transition: .3s ease-in-out;
     cursor: pointer;
+    animation: slide-up 0.4s ease;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .tasks:hover {
