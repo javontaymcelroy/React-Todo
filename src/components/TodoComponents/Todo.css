@@ -2,10 +2,11 @@ html {
     background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/9042ed76257539.5c643e712ba24.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .App {
-    width: 800px;
+    width: 45%;
     height: auto;
     margin: 2% auto;
     background-color: white;
@@ -13,6 +14,9 @@ html {
     padding: 10px 0px;
     padding-bottom: 50px;
     box-shadow: 0px 0px 80px rgba(128, 128, 128, 0.233);
+}
+@media (max-width: 1024px){
+    .App {width: 80%};
 }
 
 .App h2 {
@@ -33,7 +37,7 @@ form {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    width: 756px;
+    width: 90%;
 
 }
 
