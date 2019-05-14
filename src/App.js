@@ -2,19 +2,19 @@ import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
 
-import "./components/TodoComponents/Todo.css";
+import './components/TodoComponents/Todo.css';
 
 const todoArray = [
   {
     task: 'Organize Garage',
     id: 1528817077286,
-    completed: false,
+    completed: false
   },
 
   {
     task: 'Bake Cookies',
     id: 1528817084358,
-    completed: false,
+    completed: false
   }
 ];
 
@@ -24,6 +24,17 @@ class App extends React.Component {
     this.state = {
       todoArray
     };
+  }
+
+  componentWillMount() {
+    localStorage.getItem('todoArray') &&
+      this.setState({
+        todoArray: JSON.parse(localStorage.getItem('todoArray'))
+      });
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    localStorage.setItem('todoArray', JSON.stringify(nextState.todoArray));
   }
 
   addItem = (e, item) => {
@@ -36,8 +47,7 @@ class App extends React.Component {
 
     this.setState({
       todoArray: [...this.state.todoArray, newItem]
-    })
-
+    });
   };
 
   toggleItem = itemId => {
@@ -58,19 +68,21 @@ class App extends React.Component {
     });
   };
 
-
   render() {
+    const addItem = this.addItem;
     return (
-      <div className="App">
-        <div className="Header">
+      <div className='App'>
+        <div className='Header'>
           <h2>To-Do List</h2>
-          <TodoForm addItem={this.addItem} />
+          <TodoForm addItem={addItem} />
         </div>
         <TodoList
           todoArray={this.state.todoArray}
           toggleItem={this.toggleItem}
         />
-        <button onClick={this.clearCompleted} className="clear-btn">Clear Completed Tasks</button>
+        <button onClick={this.clearCompleted} className='clear-btn'>
+          Clear Completed Tasks
+        </button>
       </div>
     );
   }

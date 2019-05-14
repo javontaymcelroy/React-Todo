@@ -1,162 +1,167 @@
 html {
-    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/9042ed76257539.5c643e712ba24.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
+  background-image: url('http://papers.co/wallpaper/papers.co-ml65-mountain-blueish-high-sky-nature-rocky-36-3840x2400-4k-wallpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .App {
-    width: 45%;
-    height: auto;
-    margin: 2% auto;
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px 0px;
-    padding-bottom: 50px;
-    box-shadow: 0px 0px 80px rgba(128, 128, 128, 0.233);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 45%;
+  height: max-content;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 0px;
+  padding-bottom: 50px;
+  box-shadow: 0px 0px 80px rgba(26, 26, 26, 0.233);
 }
-@media (max-width: 1024px){
-    .App {width: 80%};
+@media (max-width: 1024px) {
+  .App {
+    width: 80%;
+  }
 }
 
 .App h2 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 5px;
-    font-size: 1.3rem;
-    color: #5574ee;
-    width: 100%;
-    padding-bottom: 20px;
-    border-bottom: 3px solid rgba(216, 216, 216, 0.733);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 1.3rem;
+  color: #5574ee;
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 3px solid rgba(216, 216, 216, 0.733);
 }
 
 form {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    width: 90%;
-
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 90%;
 }
 
 input {
-    width: 70%;
-    height: 45px;
-    background-color: inherit;
-    border: 0px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    padding-left: 8px;
-    border-radius: 10px;
-    outline-style:none;
-    box-shadow:none;
-    border-color:transparent;
+  width: 70%;
+  height: 45px;
+  background-color: inherit;
+  border: 0px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  padding-left: 8px;
+  border-radius: 10px;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
-input:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 ::placeholder {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: rgb(95, 95, 95);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(95, 95, 95);
 }
 
-
 .form-btn {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
-    color: #5574ee;
-    background: none;
-    border: 0px;
-    transform: rotate(45deg);
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    outline-style:none;
-    box-shadow:none;
-    border-color:transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  color: #5574ee;
+  background: none;
+  border: 0px;
+  transform: rotate(0deg);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
 }
 
 .form-btn:hover {
-    transform: rotate(0deg);
-    transition: .3s ease-in-out;
+  transform: rotate(90deg);
+  transition: 0.3s ease-in-out;
 }
 
-
 .todo-list {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 0px 20px;
-    width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 0px 20px;
+  width: 95%;
 }
 
 .clear-btn {
-    margin: 5% 35% 0 35%;
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to top, #5574ee, #2a95f9);
-    width: 30%;
-    height: 50px;
-    color: white;
-    font-size: 15px;
-    border: 0px;
-    border-radius: 8px;
-    transition: .3s ease-in-out;
-    cursor: pointer;
-    outline-style:none;
-    box-shadow:none;
-    border-color:transparent;
+  margin: 5% 35% 0 35%;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to top, #5574ee, #2a95f9);
+  width: 30%;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  border: 0px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
 }
 
 .clear-btn:hover {
-    transition: .3s ease-in-out;
-    filter: brightness(120%);
+  transition: 0.3s ease-in-out;
+  filter: brightness(120%);
 }
 
-@media (max-width: 1024px){
-    .clear-btn {
-        width: 70%;
-        margin: 1% 15%;
-    };
+@media (max-width: 1024px) {
+  .clear-btn {
+    width: 70%;
+    margin: 1% 15%;
+  }
 }
 
 .tasks {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to left, #e66465, #9198e5);
-    filter: brightness(120%);
-    border-radius: 10px;
-    color: white;
-    font-size: 1.2rem;
-    padding: 30px 20px;
-    margin-right: 15px;
-    transition: .3s ease-in-out;
-    cursor: pointer;
-    animation: slide-up 0.4s ease;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to left, #e66465, #9198e5);
+  filter: brightness(120%);
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  padding: 30px 20px;
+  margin-right: 15px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  animation: slide-up 0.4s ease;
 }
 
 @keyframes slide-up {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .tasks:hover {
-    transition: .3s ease-in-out;
-    filter: brightness(100%);
+  transition: 0.3s ease-in-out;
+  filter: brightness(100%);
 }
 
 .item.completed {
-    text-decoration: line-through;
-    filter: brightness(80%);
+  text-decoration: line-through;
+  filter: brightness(80%);
 }

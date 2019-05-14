@@ -4,7 +4,7 @@ class TodoForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      item: ""
+      item: ''
     };
   }
 
@@ -13,20 +13,21 @@ class TodoForm extends React.Component {
   };
 
   submitItem = e => {
-    this.setState({ item: "" });
+    this.setState({ item: '' });
     this.props.addItem(e, this.state.item);
   };
 
-  render(){
+  render() {
     return (
       <form onSubmit={this.submitItem}>
         <input
-          type="text"
+          type='text'
           value={this.state.item}
-          name="item"
+          name='item'
           onChange={this.handleChanges}
-          placeholder="What do you need to do today?"></input>
-        <button className="form-btn">+</button>
+          placeholder='What do you need to do today?'
+        />
+        <button className='form-btn'>+</button>
       </form>
     );
   }
