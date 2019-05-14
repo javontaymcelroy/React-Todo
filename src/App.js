@@ -6,13 +6,13 @@ import './components/TodoComponents/Todo.css';
 
 const todoArray = [
   {
-    task: 'Organize Garage',
+    task: 'Example Task',
     id: 1528817077286,
     completed: false
   },
 
   {
-    task: 'Bake Cookies',
+    task: 'Another Example Task',
     id: 1528817084358,
     completed: false
   }
